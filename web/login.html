@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <img src="image/logo.jpg" height="100" width="100" style="margin: 40px  0px  0px  100px ; display: inline-block">
+    <br>
+    <h1 style="font-family: 黑体; color: slategray;margin: 0px  0px  10px  100px" >RNG书店</h1>
+
+    <!--<div class="loginDiv" id="loginDiv">    &lt;!&ndash; <%&#45;&#45;登录框&#45;&#45;%> &ndash;&gt;-->
+        <!--<h2 align="center">用户登录</h2>  <br>-->
+        <!--<form name="loginForm" method="post" action="Servlet.java">-->
+            <!--<label> &nbsp;&nbsp;账&nbsp;号:&nbsp;-->
+                <!--<input type="text" name="userName" placeholder="请输入账号">   <br> <br>-->
+            <!--</label>-->
+            <!--<label> &nbsp;&nbsp;密&nbsp;码:&nbsp;-->
+                <!--<input type="password" name="password" placeholder="请输入密码">   <br><br>-->
+             <!--</label>-->
+            <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<input type="submit"  value="登录" align="center">-->
+            <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<input type="submit"  value="取消">-->
+        <!--</form>-->
+    <!--</div>      &lt;!&ndash; 空格用于修改格式 &ndash;&gt;-->
+
+<div class="loginDiv">
+<form class="contact_form" action="servlet/LoginServlet" method="post" name="contact_form">
+    <ul>
+        <li>
+            <h1 style="color: #FFF">请登录</h1>
+        </li>
+        <li>
+            <label >账号:</label>
+            <input type="text"  name="username" placeholder="username"  id="username" required />
+        </li>
+        <li>
+            <label >密码:</label>
+            <input type="password" name="password" placeholder="password"  required />
+        </li>
+        <li>
+            <button class="submit" type="submit">登录</button>
+            <button class="button" type="button" onclick="location.href='register.html'">注册</button>
+        </li>
+
+    </ul>
+</form>
+</div>
+
+</body>
+</html>

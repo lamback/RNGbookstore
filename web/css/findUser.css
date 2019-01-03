@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+}
+ul,li,a{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+/*头部开始*/
+.top{
+    position: relative;
+    width: 900px;
+    height: 100px;
+    /*background-color: #aaa;*/
+    margin: 0 auto;
+}
+.top div{
+    display: inline-block;
+}
+.top .ncuLogin img{
+    width: 300px;
+    height: 100px;
+}
+.top .address{
+    position: absolute;
+    left: 300px;
+    top:40px;
+    font-size: 30px;
+    font-family: 华文隶书;
+}
+.top .manager{
+    position: absolute;
+    top: 5px;
+    right:20px;
+}
+/*导航开始*/
+.nav{
+    height: 50px;
+    background-color: rgb(68,116,201);
+    margin-bottom: 15px;
+}
+.nav .content{
+    height: 50px;
+    width: 900px;
+    margin: 0 auto;
+}
+.nav .content li{
+    float: left;
+}
+.nav .content li a{
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    text-decoration: none;
+    font:700 20px 微软雅黑;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+.nav .content li a:hover{
+    background-color: rgba(250,250,250,0.5);
+}
+/*功能模块开始*/
+.function{
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    /*background-color: #aaa;*/
+    text-align: center;
+}
+.function a{
+    color: white;
+    font: 20px 微软雅黑;
+    text-decoration: none;
+}
+.function .books{
+    float: left;
+    width: 290px;
+    height: 400px;
+    background-color: rgb(9,57,157);
+    margin-right: 15px;
+}
+.function .showOrders{
+    float: left;
+    width: 290px;
+    height: 400px;
+    background-color: rgb(234,175,118);
+    margin-right: 15px;
+}
+.function .userMessage{
+    /*display: inline-block;*/
+    /*使用转成行内块会出现缝隙*/
+    float: left;
+    width: 290px;
+    height: 400px;
+    background-color: rgb(79,181,199);
+}
+.function img{
+    width: 130px;
+    height: 130px;
+    margin-top: 90px;
+}
+/*分割线*/
+.remarks{
+    height: 50px;
+    width: 1000px;
+    /*background-color: #aaa;*/
+    margin: 25px auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 50px;
+    width: 800px;
+    margin: 50px auto 0 auto;
+}
+form {
+    position: relative;
+    width: 300px;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    padding-left: 13px;
+}
+
+button {
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    position: absolute;
+}
+.bar7 form {
+    height: 42px;
+}
+.bar7 input {
+    width: 250px;
+    border-radius: 42px;
+    border: 2px solid #324B4E;
+    transition: .3s linear;
+    float: right;
+}
+.bar7 input:focus {
+    width: 300px;
+}
+.bar7 button {
+    background: none;
+    top: -2px;
+    right: 0;
+}
+.bar7 button:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #324b4e;
+}
+

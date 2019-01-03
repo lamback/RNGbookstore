@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<img src="image/logo.jpg" height="100" width="100" style="margin: 40px  0px  0px  100px ; display: inline-block">
+<br>
+<h1 style="font-family: 黑体; color: slategray;margin: 0px  0px  10px  100px" >RNG书店</h1>
+
+
+<div class="loginDiv">
+    <form class="contact_form" action="/servlet/AddUserServlet" method="post" name="contact_form">
+        <ul>
+            <li>
+                <h1 style="color: #FFF">注册</h1>
+            </li>
+            <li>
+                <label >用户名:</label>
+                <input type="text"   name="username"  placeholder="username" required/>
+                       <!--pattern="\d{10}" oninvalid="setCustomValidity('必须填写10位的账号');"-->
+                       <!--oninput="setCustomValidity('');"-->
+
+                <!--<span class="form_hint">请填写注册账号，只能包含十位数字</span>-->
+            </li>
+            <li>
+                <label >密码:</label>
+                <input type="password" name="password" placeholder="password" required />
+                       <!--$pattern = "\d{10，16}"; oninvalid="setCustomValidity('请填写正确密码');"-->
+
+                <!--<span class="form_hint">密码只能包含十到十六位大小写字母或数字</span>-->
+            </li>
+            <li>
+                <label >性别:</label>
+                <input type="text"  name="gender"  placeholder="gender"  required />
+                <!--<span class="form_hint">性别请填写男或者女</span>-->
+            </li>
+
+            <li>
+                <label >收货地址:</label>
+                <input type="text"  name="address"  placeholder="address"  required/>
+                <!--<span class="form_hint">请填写家庭住址，二十个字符以内</span>-->
+            </li>
+            <li>
+            <label >电话号码:</label>
+            <input type="tel"  name="telephone"  placeholder="telephoneNumber"
+                   pattern="\d{11}" oninvalid="setCustomValidity('必须填写十一位的电话号码');"
+                   oninput="setCustomValidity('');"
+                   required/>
+            <span class="form_hint">请填写十一位电话号码</span>
+        </li>
+            <li>
+                <label >Email:</label>
+                <input type="email"  name="email"  placeholder="email" required />
+                <span class="form_hint">请填写正确的邮箱地址</span>
+            </li>
+            <li>
+                <button class="submit" type="submit">提交</button>
+            </li>
+        </ul>
+    </form>
+</div>
+
+</body>
+</html>

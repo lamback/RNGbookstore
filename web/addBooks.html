@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>书籍录入</title>
+    <link rel="stylesheet" href="css/managerFirstPageCss.css">
+    <style type="text/css">
+        .addForm form{
+            width: 350px;
+            height: 200px;
+            /*background-color: #aaa;*/
+            /*background-color: blue;*/
+            margin: 80px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="ncuLogin"><img src="image/南昌大学login.jpg" alt="" ></div>
+    <div class="address">RNG网上书店</div>
+    <div class="manager"><img src="image/头像.png" alt="头像" height="18px" width="18px">
+        管理员
+    </div>
+</div>
+<div class="nav">
+    <div class="content">
+        <ul>
+            <li><a href="managerFirstPage.html"><img src="image/首页-选中.png" alt="" height="40px" width="40px;"></a></li>
+            <li style=" background-color: rgba(250,250,250,0.5)"><a href="addBooks.html">书籍录入</a></li>
+            <li><a href="showAllOrderList.jsp">查看订单</a></li>
+            <li><a href="queryUsers.jsp">用户信息</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="addForm">
+    <form action="/servlet/AddBooksServlet" method="post">
+        <table>
+            <tr>
+                <td>类别：</td>
+                <td>
+                    <select name="category" id="">
+                        <option value="literature">文学</option>
+                        <option value="novel">小说</option>
+                        <option value="art">艺术</option>
+                        <option value="history">历史</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>图片：</td>
+                <td>
+                    <input type="file" accept="image/*"  name="photo" required>
+                    <!--<input type="text" hidden="hidden" value="" name="myBase64">-->
+                </td>
+            </tr>
+            <tr>
+                <td>书名：</td>
+                <td><input type="text" name="bookName" required></td>
+            </tr>
+            <tr>
+                <td>作者：</td>
+                <td><input type="text" name="author" placeholder="author"  required></td>
+            </tr>
+            <tr>
+                <td>简介：</td>
+                <td><input type="text" name="information" required></td>
+            </tr>
+            <tr>
+                <td>价格：</td>
+                <td><input type="text" placeholder="请保留两位小数" name="price" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="添加"style="color: blue" ></td>
+                <td><input type="reset" value="取消" style="color: blue"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+<!--/*-->
+    <!--用于将上传的文件转为base64格式-->
+<!--*/-->
+<!--<script>-->
+    <!--var fileInput = document.querySelector('input[type=file]'),-->
+        <!--previewImg = document.querySelector('input[name="myBase64"]');-->
+    <!--fileInput.addEventListener('change', function () {-->
+        <!--var file = this.files[0];-->
+        <!--var reader = new FileReader();-->
+        <!--// 监听reader对象的的onload事件，当图片加载完成时，把base64编码賦值给预览图片-->
+        <!--reader.addEventListener("load", function () {-->
+            <!--previewImg.value = reader.result;-->
+            <!--alert(previewImg.value);-->
+        <!--}, false);-->
+        <!--// 调用reader.readAsDataURL()方法，把图片转成base64-->
+        <!--reader.readAsDataURL(file);-->
+    <!--}, false);-->
+<!--</script>-->
+</body>
+</html>
